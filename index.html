@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Todo</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            href="https://cdn.tailwindcss.com/your-version/tailwind.min.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="bg-gray-100">
+        <h1 class="text-4xl font-bold text-center mt-8">ToDo</h1>
+        <div
+            id="create-todo"
+            class="max-w-md mx-auto mt-8 p-4 bg-white rounded shadow"
+        >
+            <span class="block font-bold">Title</span>
+            <input
+                type="text"
+                name=""
+                id="title"
+                class="w-full border border-gray-300 rounded p-2 mt-2"
+            />
+            <br />
+            <br />
+            <span class="block font-bold">Description</span>
+            <input
+                type="text"
+                id="description"
+                class="w-full border border-gray-300 rounded p-2 mt-2"
+            />
+            <br />
+            <br />
+            <button
+                onclick="addTodo()"
+                class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+            >
+                ADD ToDo
+            </button>
+        </div>
+        <div id="show-todo" class="mt-8"></div>
+        <script src="script.js"></script>
+    </body>
+</html>
